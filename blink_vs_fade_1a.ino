@@ -32,7 +32,7 @@ void setup() {
   pinMode(PUSH_PIN,   INPUT);
   digitalWrite(PUSH_PIN, HIGH);  // pull-up the internal resistor  
 
-blink_speed = 2*(255/fade_delay + time_to_stop);
+  blink_speed = fade_delay*255/fadeAmount + time_to_stop;
 }
 
 void loop() {
